@@ -117,10 +117,12 @@ footer p{
 	bottom: 5vh;
 	left: 10px;
 }
-.small-image2 img{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
+.small-image2 button{
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 80px;
+	height: 30pxpx;
+	border-radius: 10%;
 	cursor: pointer;
 	opacity: 0;
 }
@@ -297,7 +299,7 @@ h1 {
 		opacity: 2
 	}
 
-	.small-image2 img{
+	.small-image2 button{
 		opacity: 2;
 	}
 
@@ -383,10 +385,11 @@ h1 {
 		opacity: 2;
 	}
 
-	.small-image2 img{
+	.small-image2 button{
 		opacity: 2;
-		width: 40px;
-		height: 40px;
+		width: 80px;
+		height: 30px;
+		border-radius: 10%;
 	}
 
 	.header h1{
