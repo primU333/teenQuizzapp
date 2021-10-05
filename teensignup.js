@@ -28,7 +28,7 @@ mode();
 
  const validate = () =>{
  	const form = document.getElementById("myform");
- 	const boxes = document.querySelector(".input");
+ 	//const boxes = document.querySelector(".input");
  	const firstName = document.getElementById("firstName");
  	const otherName = document.getElementById("OtherName");
  	const number = document.getElementById("number");
@@ -38,34 +38,31 @@ mode();
  	const password = document.getElementById("password");
  	const password2 = document.getElementById("password2");
 
- 	form.addEventListener("submit", ()=>{
- 		//console.log("hello")
- 		checkInputs();
- 	});
+ 	form.addEventListener("submit", checkInputs)
 
- 	function checkInputs(e){
- 	 		//check inputs from fields
-	 	const firstNameValue = firstName.value.trim();
-	 	const otherNameValue = otherName.value.trim();
-	 	const numberValue = number.value.trim();
-	 	const emailValue = email.value.trim();
-	 	const genderValue = gender.value.trim();
-	 	const birthdayValue = birthday.value.trim();
-	 	const passwordValue = password.value.trim()
-	 	const password2Value = password2.value.trim();
+		function checkInputs(){
+			 
+			const firstNameValue = firstName.value.trim();
+			const otherNameValue = otherName.value.trim();
+			const numberValue = number.value.trim();
+			const emailValue = email.value.trim();
+			const genderValue = gender.value.trim();
+			const birthdayValue = birthday.value.trim();
+			const passwordValue = password.value.trim()
+			const password2Value = password2.value.trim();
 
+	//check password match
+			if(password2Value === passwordValue){
+				//display error
+				alert("password not matching!!")
 
-	 	if(firstNameValue === ""){
-	 		//show error message
-	 		console.log("fist name can not be blank!");
+			}else{
+				console.log("hi")
+				//console.log("pw matched!");
+			}
 
-	 	
-	 	}else{
-	 		//show success message
-	 		e.preventDefault();
-	 	}
-
-	 }
+		}
  }
 
  validate();
+

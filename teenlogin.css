@@ -24,12 +24,6 @@ nav{
 
 }
 
-nav p{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 30%;
-}
 
 .image{
 	width: 30px;
@@ -88,13 +82,12 @@ nav p{
 }
 
 footer{
-	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #696969;
+	margin-top: 30px;
 	bottom: 0;
-	width: 99.5%;
 	height: 8vh;
 }
 
@@ -166,12 +159,7 @@ footer p{
 	font-family: serif;
 	text-shadow: 1px 1px 1px rgba(0,0,030, .4);
 }
-#btn{
-	position: relative;
-	bottom: 1px;
-	left: 50vw;
-	background-color: #808080;
-}
+
 
 /*Media Querry(Mobile Phones)**************************
 *******************************************************/
