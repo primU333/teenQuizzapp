@@ -70,6 +70,7 @@ footer{
 	justify-content: center;
 	background-color: #696969;
 	bottom: 0;
+	margin-top: 30px;
 	height: 8vh;
 }
 
@@ -80,6 +81,7 @@ footer p{
 *****************************************************/
 
 .header{
+	margin-top: 0;
 	background-color: #C0C0C0;
 	text-align: center;
 	justify-content: space-between;
@@ -101,7 +103,7 @@ footer p{
 }
 .small-image{
 	position: fixed;
-	bottom: 5vh;
+	bottom: 8vh;
 	right: 10px;
 }
 .small-image img{
@@ -114,7 +116,7 @@ footer p{
 
 .small-image2{
 	position: fixed;
-	bottom: 5vh;
+	bottom: 8vh;
 	left: 10px;
 }
 .small-image2 button{
@@ -274,8 +276,8 @@ h1 {
 	}
 
 	.profile{
-		right: 10px;
-		top: 33vh;
+		right: 0;
+		top: 10vh;
 		width: 40%;
 		opacity: 0
 	}
@@ -294,7 +296,9 @@ h1 {
 	.logIn-show{
 		opacity: 2;
 	}
-
+	.small-image{
+		bottom: 3vh;
+	}
 	.small-image img{
 		opacity: 2
 	}
@@ -352,7 +356,9 @@ h1 {
 	.navlinks-open{
 		opacity: 2;
 	}
-
+	.small-image{
+		bottom: 8vh;
+	}
 	.small-image img{
 		opacity: 2;
 		width: 40px;
@@ -360,8 +366,9 @@ h1 {
 	}
 
 	.profile{
+		margin-left: 5px;
 		position: fixed;
-		top: 20vh;
+		top: 13vh;
 		width: 100%;
 		border-radius: 0;
 		opacity: 0;
