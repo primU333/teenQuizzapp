@@ -165,6 +165,16 @@ footer p{
 	color: #ffffff;
 }
 
+<<<<<<< HEAD:teensignup.css
+=======
+.invalid-input{
+	border-color: #FF0000;
+}
+
+.valid-input{
+	border-color: #007700;
+}
+>>>>>>> 3fa3e6a83344b6a5f33312f2be0142cb30b01dbc:css/teensignup.css
 
 
 /*Media Querry(Mobile Phones)**************************

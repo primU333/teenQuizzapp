@@ -1,0 +1,53 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>						teenQuizz Documentation							   <
+>		teenQuiz consist of three major clases/levels ie.				   <
+>		Fresher, Intermediate and master.								   <
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+				NB:teenQuizz will be a fun logical test quizz
+						__NO__ asking blasphemy!
+
+
+1). The quizz starts with default questions basically for the pioneers(5)
+ who will automatically become the masters.
+
+2). "Teen masters"(the first 5), will set 
+  the beginer(fresher) questions for the next joiners. 
+  Then, those who join will have to answer the 
+  questions to get promoted to the next level.
+
+3). "Masters" will set the questions together with the answers
+  and then submit them to tyhe database.
+
+4). "Masters" will also participate in the answers since
+  the master level also has their own (though the questions here have no limit).
+
+5). Users wont be able to identify eachother
+  since there can be cheating of the quizz.
+
+6). promotion will be done automatically only if
+  a user answers 70% of the average questions 
+  available at that very level.
+
+7). Every level will have a minimum 10 logical questions.
+  Complexity will depend on the level. 
+
+8). Always unaswered questions will be filterd(at master level )
+  and presented for who ever can answer.
+
+9). Masters will have the option to decide
+  to which level the question is set.
+
+10). Level unspecified questions will be
+  directed to the master class.
+
+
+  **************************************************                                               *
+  *             Default questions                 *
+  *                                               *
+  *************************************************
+
+
+
+  a). What wets as it dries?
+  b). 

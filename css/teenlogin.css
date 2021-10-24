@@ -87,8 +87,13 @@ footer{
 	justify-content: center;
 	background-color: #696969;
 	margin-top: 30px;
+<<<<<<< HEAD:teenlogin.css
 	bottom: 0;
 	height: 8vh;
+=======
+	height: 8vh;
+	bottom: 0;
+>>>>>>> 3fa3e6a83344b6a5f33312f2be0142cb30b01dbc:css/teenlogin.css
 }
 
 footer p{
@@ -308,7 +313,7 @@ footer p{
 }
 
 .input-invalid{
-	border-color: #0000FF;
+	border-color: #FF0000;
 	height: 5vh;
 	border-radius: 3%;
 }
