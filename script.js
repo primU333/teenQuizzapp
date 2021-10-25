@@ -9,19 +9,24 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
+	//check the state of showmenu
     if(!showMenu){
+		//add the classes to show the nav menu
         menuBtn.classList.add('close');
         menu.classList.add('show');
         menuNav.classList.add('show');
         navItems.forEach(item => item.classList.add('show'));
 
+		//set showmenu to the opposite of what it was
         showMenu = true;
     } else {
+		//add the classes to remove the nav menu
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
         menuNav.classList.remove('show');
         navItems.forEach(item => item.classList.remove('show'));
 
+		//set showmenu to the opposite of what it was
         showMenu = false;
     }
 }
@@ -30,30 +35,47 @@ function toggleMenu() {
 const darkMode = document.querySelector('.dark-mode-switch');
 const switchBtn = document.querySelector('.switch');
 const body = document.querySelector('body');
-const footer = document.querySelector('footer');
+const profile = document.querySelector('.profile');
 
 let toggle = false;
 
 darkMode.addEventListener('click', toggleMode);
 
+window.onload = checkTheme();
+
+function checkTheme() {
+	const theme = localStorage.getItem('theme');
+	if(theme == 'dark'){
+		darkMode.classList.add('rotate')
+		switchBtn.classList.add('swt-dark')
+		body.classList.add('dark')
+		profile.classList.add('alt-dark')
+	}
+}
+
 function toggleMode() {
+	localStorage.getItem('theme');
+	//check the state of toggle
 	if(!toggle){
-		darkMode.style.transform = 'rotate(180deg)';
-		switchBtn.style.backgroundColor = '#000';
-		body.style.backgroundColor = '#777'
-		body.style.color = '#fff';
-		footer.style.backgroundColor = '#fff';
-		footer.style.color = '#000'
-
+		darkMode.classList.add('rotate')
+		switchBtn.classList.add('swt-dark')
+		body.classList.add('dark')
+		profile.classList.add('alt-dark')
+		//set toggle to the opposite value
 		toggle = true;
-	} else {
-		darkMode.style.transform = 'rotate(0deg)';
-		switchBtn.style.backgroundColor ='#fff';
-		body.style.backgroundColor = '#f5fffa'
-		body.style.color = '#000';
-		footer.style.backgroundColor = '#444';
-		footer.style.color = '#fff'
 
+		//save the user theme
+		localStorage.setItem('theme','dark');
+	} else {
+		darkMode.classList.remove('rotate')
+		switchBtn.classList.remove('swt-dark')
+		body.classList.remove('dark')
+		profile.classList.remove('alt-dark')
+
+		//set toggle to the opposite value
 		toggle = false;
+
+		//save the user theme
+	localStorage.setItem('theme','light');
 	}
 }
